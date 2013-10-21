@@ -773,7 +773,6 @@ describe WorkPackagesController do
 
       # see ticket #2009 on OpenProject.org
       context "new attachment on new work package" do
-        let(:filename) { "test1.test" }
         let(:new_work_package) { FactoryGirl.build(:work_package,
                                                    project: project,
                                                    type: type,
